@@ -10,8 +10,8 @@ const WebpackDevServer = require("webpack-dev-server");
 environment.plugins.append(
   "Provide",
   new Webpack.ProvidePlugin({
-    $: "jquery",
-    jQuery: "jquery",
+    $: 'jquery/src/jquery',
+    jQuery: 'jquery/src/jquery'
     Popper: ["popper.js", "default"],
   })
 );
