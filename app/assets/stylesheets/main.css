@@ -1,0 +1,12 @@
+@import url(
+  https://fonts.googleapis.com/css?family=Poppins:300,
+  400,
+  500,
+  600|Roboto+Mono
+);
+
+@font-face {
+  font-family: "Playfair Display Extrabold";
+  src: url("app/assets/stylesheets/fonts/PlayfairDisplay-ExtraBold.ttf")
+    format("ttf");
+}

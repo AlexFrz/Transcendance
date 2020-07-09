@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authentificate_user!, except: [:show, :index]
+
   def index
     @categories = Category.all
 
