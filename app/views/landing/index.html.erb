@@ -1,5 +1,8 @@
 <h1>Landing#index</h1>
 
+<%= link_to "Voir les articles", articles_path %>
+
+
 <% if current_user %>
 <%= link_to "Logout", destroy_user_session_path, method: :delete %>
 <% else %>
