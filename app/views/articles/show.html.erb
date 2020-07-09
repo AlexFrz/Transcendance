@@ -1,6 +1,7 @@
 <h3><%= @article.title %></h3>
 <p> <%= @article.content %> </p>
-
+<% if current_user && current_user.admin %>
 <%= link_to "Modifier", edit_article_path(@article.id) %>
-<%= link_to "Supprimer", article_path(@article.id), method: :delete %>
+<%= link_to "Supprimer", article_path(@article.id), method: :delete, data: { confirm: 'Es-tu sûr?' }%>
+<% end %>
 <%= link_to "Retour", articles_path %>
