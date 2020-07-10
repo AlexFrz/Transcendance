@@ -19,12 +19,11 @@
   justify-content: center;
   object-fit: cover;
   top: 0;
-  z-index: -2;
+  z-index: -1;
 }
 
 .banner .content {
   position: relative;
-  z-index: 1;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -59,4 +58,8 @@
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
+}
+
+.bg-red {
+  background-color: #b8002a;
 }
