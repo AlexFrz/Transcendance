@@ -5,16 +5,9 @@
 </template>
 
 <script>
-app.get("/favicon.ico", (req, res) => res.status(204));
-app.get("/", (req, res) => res.status(204));
-
 export default {
-  data: function() {
-    return {
-      message: "Transcendance",
-    };
-  },
-};
+  props: ["message"],
+}
 </script>
 
 <style scoped>
