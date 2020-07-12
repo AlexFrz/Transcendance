@@ -2,90 +2,11 @@
 </div>
 
 <div class="body2">
-<header>
-    <h1>VIDEOS, PODCASTS & ARTICLES</h1>
+
     <div class="categories">
         <% @categories.each do |category| %>
-        <%= link_to category.category, articles_path(:cate => category.id) %>
+        <%= link_to category.category, articles_path(:cate => category.id), class: "category" %> |
         <% end %>
     </div>
-    </header>
 
-    <div class="wall   ">
-        <div class="wall-item wall-column">
-            <%= image_tag "1.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall   ">
-        <div class="wall-item wall-column">
-            <%= image_tag "2.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall ">
-        <div class="wall-item wall-column">
-            <%= image_tag "3.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall">
-        <div class="wall-item wall-column">
-            <%= image_tag "4.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall">
-        <div class="wall-item wall-column">
-            <%= image_tag "5.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall">
-        <div class="wall-item wall-column">
-            <%= image_tag "6.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall">
-        <div class="wall-item  wall-column ">
-            <%= image_tag "7.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall ">
-        <div class="wall-item wall-column">
-            <%= image_tag "8.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall">
-        <div class="wall-item wall-column">
-            <%= image_tag "9.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-       <div class="wall ">
-        <div class="wall-item wall-column">
-            <%= image_tag "10.jpg", class: "wall-image" %>
-            <h2> Lorem ipsum, dolor sit amet. </h2>
-            <div class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur perferendis temporibus impedit. Distinctio quidem voluptatem et hic dignissimos laboriosam, harum!</div>
-        </div>
-    </div>
-</div>
-</div>
- 
-
-
-
-
-
+   <%= render 'layouts/gridlayout'%>
