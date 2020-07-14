@@ -1,12 +1,2 @@
 <!-- / Inner Wrapper -->
-</div>
-
-<div class="body2">
-
-    <div class="categories">
-        <% @categories.each do |category| %>
-        <%= link_to category.category, articles_path(:cate => category.id), class: "category" %> |
-        <% end %>
-    </div>
-
-   <%= render 'layouts/gridlayout'%>
+<%= render 'layouts/gridlayout'%>

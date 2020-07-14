@@ -1,0 +1,114 @@
+body {
+  background-color: #e3e7e9;
+  padding: 0;
+  margin: 0;
+}
+.containerr {
+  height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+.cardd {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  transition: all 200ms;
+}
+
+.photoo {
+  background: url("https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 45%;
+  width: 100%;
+  background-size: 400px 300px;
+  position: relative;
+}
+
+.categoryy {
+  background-color: #e90014;
+  color: white;
+  height: 30px;
+  width: 130px;
+  position: absolute;
+  bottom: -10px;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  left: -15px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+
+.categoryy:before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 10px solid #d8001a;
+  border-left: 15px solid transparent;
+  left: 0;
+  bottom: -10px;
+}
+
+.news {
+  height: 55%;
+  width: 96%;
+  text-align: justify;
+  position: relative;
+  padding-left: 4%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 20px;
+}
+
+.fa {
+  margin-left: 10px;
+  color: #bbbbbb;
+}
+
+.titlee {
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  color: #2c2c2c;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.articlee {
+  position: absolute;
+  top: 100px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.time {
+  position: absolute;
+  bottom: 15px;
+  font-size: 18px;
+  color: #bbbbbb;
+}
+
+button {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  height: 40px;
+  width: 120px;
+  background-color: #e90014;
+  border: none;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}

@@ -330,3 +330,37 @@ nav ul .li .a:hover {
   color: #333;
   text-align: center;
 }
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.navigation ul {
+  position: relative;
+}
+.navigation ul li {
+  text-align: center;
+  list-style: none;
+}
+
+.navigation ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px;
+  display: inline-flex;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.navigation ul:hover li a {
+  color: #0002;
+}
+
+.navigation ul li:hover a {
+  color: #000;
+}
