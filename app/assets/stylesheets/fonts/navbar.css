@@ -63,7 +63,7 @@ nav ul .li .a {
   color: white;
 }
 nav ul .li .a:hover {
-  color: #b8002a;
+  color: #d8262c;
   text-decoration: none;
 }
 /*styling open close button*/
@@ -85,7 +85,7 @@ nav ul .li .a:hover {
   transition-property: all 0.2s linear 0s;
 }
 .btn-open:hover:after {
-  color: #b8002a;
+  color: #d8262c;
 }
 .btn-close:after {
   color: #fff;
@@ -94,7 +94,7 @@ nav ul .li .a:hover {
   transition-property: all 0.2s linear 0s;
 }
 .btn-close:hover:after {
-  color: #b8002a;
+  color: #d8262c;
 }
 
 .container {
@@ -213,7 +213,7 @@ nav ul .li .a:hover {
 }
 
 .menu-wrap .menu > div {
-  background: rgba(128, 0, 29, 0.9);
+  background: rgba(216, 38, 53, 0.9);
   border-radius: 50px;
   width: 200vw;
   height: 200vw;
