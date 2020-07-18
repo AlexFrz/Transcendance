@@ -81,7 +81,7 @@ header h1 {
 .categories {
   text-align: center;
   justify-content: center;
-  padding: 30px;
+  padding-top: 20px;
 }
 
 .category {
@@ -89,6 +89,7 @@ header h1 {
   color: #d8262c;
   font-size: 16px;
   padding-top: 10px;
+  list-style: none;
 }
 
 .category:hover {

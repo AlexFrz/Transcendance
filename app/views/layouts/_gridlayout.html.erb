@@ -1,56 +1,29 @@
  </div>
  
- <div class="body2">
 
- <h1 class="title bg-red">VIDEOS, PODCASTS & ARTICLES</h1>
-
-    <div class="categories">
+    <div class="categories"> |
         <% @categories.each do |category| %>
-        | <%= link_to category.category, articles_path(:cate => category.id), class: "category" %> |
+        <%= link_to category.category, articles_path(:cate => category.id), class: "category" %> |
         <% end %>
     </div>
 
-    <div class="wall   ">
-        <div class="wall-item wall-column">
+<div class="container-medium">
+ <center><h1 class="title bg-red">VIDEOS, PODCASTS & ARTICLES</h1></center>
+
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
-    <div class="wall   ">
-        <div class="wall-item wall-column">
             <%= render 'layouts/card'%>
-    </div>
+ </>
+</div>
+
+
 </div>
 </div>
  
