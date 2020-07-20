@@ -1,0 +1,53 @@
+ </div>
+ 
+
+    <div class="categories"> |
+        <% @categories.each do |category| %>
+        <%= link_to category.category, articles_path(:cate => category.id), class: "category" %> |
+        <% end %>
+    </div>
+
+<div class="container-medium">
+ <center><h1 class="title bg-red">VIDEOS, PODCASTS & ARTICLES</h1></center>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+    
+            <% @articles.each do |article| %>				
+		<div class="content">						  
+            <div class="article">
+            <div class="podcast-media-container ">
+            <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/b2nb7Fs4oVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                </div>
+            <div class="podcast-content-container ">
+            <header>
+                <div class="entry-meta">
+                <time class="event-date"><%= article.created_at.strftime("%d/%m/%Y") %></time>
+                </div>
+                <h2 class="entry-title"><%= article.title %></h2>		
+            </header>
+                <p></p><p><%= truncate article.content, length: 100 %></p>
+                <p></p>
+            <a href="<%= article_path(article.id) %>" class="btn arrow lower">More</a>
+            </div>
+
+            </div>
+
+            </div>
+            <% end %>
+        </div>
+            
+</div>
+
+<%= link_to "Créer un article", new_article_path, class: "btn arrow"%>
+</div>
+</div>
+</div>
+
+
+ 
+
+
+
+
+

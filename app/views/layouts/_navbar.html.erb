@@ -12,8 +12,12 @@
              <div>
                  <ul>
                      <%= link_to "VIDEOS, PODCAST & ARTICLES", articles_path, class:"li a" %>
-                     <%= link_to "SE CONNECTER", new_user_session_path, class:"li a" %>
-                     <%= link_to "S'INSCRIRE", new_user_registration_path, class:"li a" %>
+                    <% if user_signed_in? %>
+                        <%= link_to "SE DÉCONNECTER", destroy_user_session_path, method: :delete  %>
+                    <% else %>
+                        <%= link_to "SE CONNECTER", new_user_session_path, class:"li a" %>
+                        <%= link_to "S'INSCRIRE", new_user_registration_path, class:"li a" %>
+                    <% end %>
                      <%= link_to "BOOTCAMPS", articles_path, class:"li a" %>
                  </ul>
              </div>

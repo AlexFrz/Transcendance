@@ -8,7 +8,8 @@
 							<h2 class="entry-title"><a href="#">L'Advaïta Vedanta - La Voie de la Connaissance</a></h2>
 							<p>Il y a certaines philosophies qui ne sont et ne resteront toujours que des idées, et d’autres qui s’expérimentent, et passent du stade d'idée, à celui de Vérité.
 </p>
-							<a href="#" class="btn arrow">Regarder</a>
+							<%= link_to "Regarder", articles_path, class:"btn arrow" %>
+
 						</article>
 					</div>
 				</div>
@@ -19,7 +20,8 @@
 						<article>
 							<h2 class="entry-title"><a href="#">Le Jeune Intermittant - La Méthode Leangains</a></h2>
 							<p>Je vais te raconter comment j'ai réussi à perdre 12kg en trois mois, sans même me restreindre.</p>
-							<a href="#" class="btn arrow">Lire</a>
+							<%= link_to "Lire", articles_path, class:"btn arrow" %>
+
 						</article>
 					</div>
 				</div>
@@ -31,7 +33,7 @@
 						<article>
 							<h2 class="entry-title">Les 10 Traits de Caractère d'un Leader</h2>
 							<p>Inscris-toi à notre Newsletter et grandis chaque jour!</p>					
-							<a target="_blank" href="#" class="btn arrow">S'inscrire</a>									
+							<%= link_to "S'inscrire", new_user_registration_path, class: "btn arrow"  %>									
 						</article>
 					</div>
 				</div>
