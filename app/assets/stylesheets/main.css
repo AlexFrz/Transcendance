@@ -212,6 +212,10 @@
   font-weight: lighter;
 }
 
+.medium-editor-placeholder:after {
+  color: #b3b3b1 !important;
+}
+
 .article-title::placeholder {
   font-size: 3rem;
   font-family: "Merriweather", serif;
