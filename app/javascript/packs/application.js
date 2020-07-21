@@ -6,6 +6,10 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
+require("@rails/ujs").start();
+require("turbolinks").start();
+require("@rails/activestorage").start();
+require("channels");
 
 import Vue from "vue/dist/vue.esm";
 
@@ -22,3 +26,5 @@ document.addEventListener("turbolinks:load", () => {
 });
 
 import "./jaliswall";
+
+import "controllers";

@@ -1,9 +1,61 @@
-<%= form_for @article do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-    <%= f.label :content %>
-    <%= f.text_area :content %>
 
-    <%= f.select :category_id, Category.all.map{|c| [c.category, c.id] } %>
-    <%= f.submit %>
+<div class="container-medium">
+<%= form_for @article do |f| %>
+
+<div class="form-group">
+    <%= f.text_field :title, placeholder: "#Titre", class: "article-title" %>
+</div>
+<div class="form-group">
+    <%= f.text_area :content, placeholder: "Partages ton savoir...", class: "article-content editable"%>
+</div>
+<center>
+    <%= f.select :category_id, Category.all.map{|c| [c.category, c.id] }, {:include_blank => "Catégorie"}, {:class => "btn arrow2"}  %>
+
+    <%= f.submit "Créer", :class => "btn arrow" %>
+    <p>    <%= link_to "Retour", articles_path, class: "none" %></p>
+</center>
 <% end %>
+
+<script src="js/medium-editor.js"></script>
+
+<script>
+    var editor = new MediumEditor('.editable', {
+    toolbar: {
+        buttons: [
+            'bold',
+            'italic',
+            'underline',
+            'anchor',
+            {
+                name: 'h1',
+                action: 'append-h2',
+                aria: 'header type 1',
+                tagNames: ['h2'],
+                contentDefault: '<b>H1</b>',
+                classList: ['custom-class-h1'],
+                attrs: {
+                    'data-custom-attr': 'attr-value-h1'
+                }
+            },
+            {
+                name: 'h2',
+                action: 'append-h3',
+                aria: 'header type 2',
+                tagNames: ['h3'],
+                contentDefault: '<b>H2</b>',
+                classList: ['custom-class-h2'],
+                attrs: {
+                    'data-custom-attr': 'attr-value-h2'
+                }
+            },
+            'justifyCenter',
+            'quote',
+        ]
+    },
+    placeholder: {
+        text: 'Partages ton savoir...',
+        hideOnClick: true
+    },
+});</script>
+
+</div>

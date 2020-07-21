@@ -187,3 +187,86 @@
 .higher {
   margin-top: -50px;
 }
+
+.article-title {
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 3rem;
+  border: none;
+  font-family: "Merriweather", serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: lighter;
+}
+
+.article-content {
+  width: 100%;
+  font-size: 18px;
+  height: 600px;
+  padding-left: 20px;
+  padding-top: 10px;
+  border: none;
+  font-family: "Merriweather", serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: lighter;
+}
+
+.article-title::placeholder {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  color: #b3b3b1;
+  font-weight: lighter;
+}
+
+.article-content::placeholder {
+  font-size: 10px;
+  font-family: "Merriweather", serif;
+  color: #b3b3b1;
+  font-weight: lighter;
+}
+
+.padding {
+  padding: 20px;
+  margin-top: -5px;
+}
+
+.align-right {
+  margin-left: 50%;
+}
+
+.btn.arrow2 {
+  padding: 15px 100px;
+  border: solid 1px black;
+}
+.btn.arrow2:after {
+  content: " ";
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  background-position: -250px -100px;
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: right 0.35s ease-in-out;
+  -moz-transition: right 0.35s ease-in-out;
+  -ms-transition: right 0.35s ease-in-out;
+  -o-transition: right 0.35s ease-in-out;
+  transition: right 0.35s ease-in-out;
+}
+
+.none {
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  font-weight: lighter;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 12px;
+}

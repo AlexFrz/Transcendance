@@ -101,3 +101,19 @@ header h1 {
   font-size: 4em;
   padding: 15px;
 }
+
+.arrow {
+  background-color: white;
+}
+
+.arrow:hover {
+  color: rgba(216, 38, 44, 0.6);
+}
+
+.arrow2 {
+  background-color: white;
+}
+
+.arrow2:hover {
+  color: rgba(216, 38, 44, 0.6);
+}
