@@ -1,8 +1,9 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, except: [:show, :index]
+  before_action :authenticate_user!
 
   def index
     @categories = Category.all
+
 
     cate = params[:cate]
 
@@ -47,13 +48,13 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article = Article.find(params[:id])
-    @article.destroy
-    redirect_to  :action => :index
+    @article.destroy!
+    redirect_to '/', :notice => "L'article a bien été supprimé !"
   end
 
   private
 
   def article_params
-    params.require(:article).permit(:title, :content, :category_id)
+    params.require(:article).permit(:title, :content, :category_id, :image)
   end
 end

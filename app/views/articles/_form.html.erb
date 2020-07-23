@@ -1,5 +1,5 @@
 
-<div class="container-medium">
+<div class="containersmall">
 <%= form_for @article do |f| %>
 
 <div class="form-group">
@@ -9,12 +9,23 @@
     <%= f.text_area :content, placeholder: "Partages ton savoir...", class: "article-content editable"%>
 </div>
 <center>
-    <%= f.select :category_id, Category.all.map{|c| [c.category, c.id] }, {:include_blank => "Catégorie"}, {:class => "btn arrow2"}  %>
+<div class="field none padding">
+    <label class="btn arrow2">
+    Ajouter une image
+    <span style="display:none;">
+         <%= f.file_field :image %>
+    </span>
+</label>
+</div>
+    <%= f.select :category_id, Category.all.map{|c| [c.category, c.id] }, {:include_blank => "Catégorie"}, {:class => "btn2 arrow2"}  %>
 
     <%= f.submit "Créer", :class => "btn arrow" %>
     <p>    <%= link_to "Retour", articles_path, class: "none" %></p>
+
 </center>
 <% end %>
+
+
 
 <script src="js/medium-editor.js"></script>
 

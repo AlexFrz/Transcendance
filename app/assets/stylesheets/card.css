@@ -125,6 +125,9 @@ object {
     .podcast-content-container,
   .tax-type .site-main .page-section article .podcast-content-container {
     width: 64.1666666666%;
+    height: 245px;
+    overflow: hidden;
+    margin-top: 10px;
   }
 }
 
@@ -136,6 +139,8 @@ object {
     .podcast-content-container,
   .tax-type .site-main .page-section article .podcast-content-container {
     width: 62.5%;
+    height: 245px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 700px) {
@@ -150,6 +155,8 @@ object {
     margin-left: 2.5%;
     margin-top: 0;
     float: left;
+    height: 245px;
+    overflow: hidden;
   }
 }
 
@@ -160,6 +167,8 @@ object {
   .podcast-content-container,
 .tax-type .site-main .page-section article .podcast-content-container {
   margin-top: 20px;
+  height: 245px;
+  overflow: hidden;
 }
 
 .container,
@@ -409,6 +418,8 @@ user agent stylesheet header {
   align-items: center;
   padding-bottom: 30px;
   border-bottom: solid #bcbcbb 1px;
+  font-family: "proxima-nova-alt", "Century Gothic", CenturyGothic, AppleGothic,
+    "Helvetica Neue", Helvetica, Arial, sans-seri;
 }
 .container-medium {
   width: 920px;
@@ -554,6 +565,7 @@ user agent stylesheet header {
 .event-date {
   color: #d8262c;
   font-size: 0.8em;
+  padding-top: 20px;
 }
 
 .header-nav ul li.sep {

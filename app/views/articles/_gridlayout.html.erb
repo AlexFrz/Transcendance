@@ -1,24 +1,29 @@
  </div>
- 
-
+ <div class="bodyy">
+<div class="padding-top">
+<div class="container-medium">
     <div class="categories"> |
         <% @categories.each do |category| %>
         <%= link_to category.category, articles_path(:cate => category.id), class: "category" %> |
         <% end %>
     </div>
-
-<div class="container-medium">
  <center><h1 class="title bg-red">VIDEOS, PODCASTS & ARTICLES</h1></center>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
     
-            <% @articles.each do |article| %>				
-		<div class="content">						  
+            <% @articles.each do |article| %>	
+            		
+		<div class="content">	
+        <a href="<%= article_path(article.id) %>" class="no-decoration" >					  
             <div class="article">
             <div class="podcast-media-container ">
-            <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/b2nb7Fs4oVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-                </div>
+                <% if article.image.present? %>
+                    <%= image_tag(article.image, class: "index-article-image") %>
+                <% else %>
+                    <%= image_tag "YO.png", class: "index-article-image" %>
+                <% end %>
+            </div>
             <div class="podcast-content-container ">
             <header>
                 <div class="entry-meta">
@@ -26,20 +31,24 @@
                 </div>
                 <h2 class="entry-title"><%= article.title %></h2>		
             </header>
-                <p></p><p><%= truncate article.content, length: 100 %></p>
+                <p></p><p><%= sanitize article.content, length: 200, class: "twofifty" %></p>
                 <p></p>
-            <a href="<%= article_path(article.id) %>" class="btn arrow lower">More</a>
+            </a>
+            
             </div>
+            
 
             </div>
 
             </div>
             <% end %>
         </div>
-            
+    
+        <% if current_user && current_user.admin %>
+           <center><%= link_to "Créer un article", new_article_path, class: "btn arrow marginplus"%> </center>
+        <% end %>
 </div>
 
-<%= link_to "Créer un article", new_article_path, class: "btn arrow"%>
 </div>
 </div>
 </div>
@@ -50,4 +59,4 @@
 
 
 
-
+</div>

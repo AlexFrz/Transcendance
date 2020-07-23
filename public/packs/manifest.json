@@ -1,21 +1,37 @@
 {
-  "application.js": "/packs/js/application-a2a64790eb0f9729fc2e.js",
-  "application.js.map": "/packs/js/application-a2a64790eb0f9729fc2e.js.map",
+  "application.js": "/packs/js/application-c53c9c976fabe2a5908f.js",
+  "application.js.map": "/packs/js/application-c53c9c976fabe2a5908f.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-a2a64790eb0f9729fc2e.js"
+        "/packs/js/application-c53c9c976fabe2a5908f.js"
       ],
       "js.map": [
-        "/packs/js/application-a2a64790eb0f9729fc2e.js.map"
+        "/packs/js/application-c53c9c976fabe2a5908f.js.map"
+      ]
+    },
+    "hello_vue 2": {
+      "js": [
+        "/packs/js/hello_vue%202-706c92f6813e6bafd774.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_vue%202-706c92f6813e6bafd774.js.map"
       ]
     },
     "hello_vue": {
       "js": [
-        "/packs/js/hello_vue-23d94816c7abc664e284.js"
+        "/packs/js/hello_vue-d4b4871066b4e9e3ff40.js"
       ],
       "js.map": [
-        "/packs/js/hello_vue-23d94816c7abc664e284.js.map"
+        "/packs/js/hello_vue-d4b4871066b4e9e3ff40.js.map"
+      ]
+    },
+    "jaliswall 2": {
+      "js": [
+        "/packs/js/jaliswall%202-2429068b660b73b63d96.js"
+      ],
+      "js.map": [
+        "/packs/js/jaliswall%202-2429068b660b73b63d96.js.map"
       ]
     },
     "jaliswall": {
@@ -27,8 +43,12 @@
       ]
     }
   },
-  "hello_vue.js": "/packs/js/hello_vue-23d94816c7abc664e284.js",
-  "hello_vue.js.map": "/packs/js/hello_vue-23d94816c7abc664e284.js.map",
+  "hello_vue 2.js": "/packs/js/hello_vue%202-706c92f6813e6bafd774.js",
+  "hello_vue 2.js.map": "/packs/js/hello_vue%202-706c92f6813e6bafd774.js.map",
+  "hello_vue.js": "/packs/js/hello_vue-d4b4871066b4e9e3ff40.js",
+  "hello_vue.js.map": "/packs/js/hello_vue-d4b4871066b4e9e3ff40.js.map",
+  "jaliswall 2.js": "/packs/js/jaliswall%202-2429068b660b73b63d96.js",
+  "jaliswall 2.js.map": "/packs/js/jaliswall%202-2429068b660b73b63d96.js.map",
   "jaliswall.js": "/packs/js/jaliswall-d63f162f771cf239db71.js",
   "jaliswall.js.map": "/packs/js/jaliswall-d63f162f771cf239db71.js.map"
 }

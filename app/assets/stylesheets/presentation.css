@@ -9,6 +9,12 @@
   z-index: -1;
 }
 
+@media (max-width: 640px) {
+  .presentationbackground {
+    background-repeat: repeat-x;
+  }
+}
+
 .presentationtext {
   padding: 5em;
   font-size: 22px;

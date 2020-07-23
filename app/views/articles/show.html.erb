@@ -1,9 +1,22 @@
-<h3><%= @article.title %></h3>
-<p> <%= @article.content %> </p>
-<% if current_user && current_user.admin %>
-<%= link_to "Modifier", edit_article_path(@article.id) %>
-<%= link_to "Supprimer", article_path(@article.id), method: :delete, data: { confirm: 'Es-tu sûr?' }%>
-<% end %>
-<%= link_to "Retour", articles_path %>
+<div class="containersmall">
 
+        <div class="article-titlee">
+            <h1><%= @article.title %></h1>
+        </div>
+
+    <% if @article.image.present? %>
+        <center><%= image_tag(@article.image, class: "article-image padding") %></center>
+    <% end %>
+    <div class="article-content">
+    <p> <%= @article.content.html_safe %> </p>
+    </div>
+
+    <div class="container-medium">
+<% if current_user && current_user.admin %>
+<center><%= link_to "Modifier", edit_article_path(@article.id), class: "btn" %>
+<%= link_to 'Supprimer', @article, method: :delete, class:"btn mr-2 mb-2" %><% end %></center>
+</div>
+<p> <center> <%= link_to "Retour", articles_path, class: "none paddingtop" %> </center></p>
+</div>
+</div>
 

@@ -1,4 +1,5 @@
-
+<div class="banner">
+<%= image_tag "alps.jpg", class: "fullsize"%>
 <div class="login-box">
  <h1 class="bg-red">S'inscrire</h1>
 
@@ -37,9 +38,10 @@
 
   <div class="actions">
     <%= f.submit "S'inscrire", class: "bttn" %>
-  </div>
+  
+<%= render "devise/shared/links" %>
+</div>
 <% end %>
 </div>
 
-<%= render "devise/shared/links" %>
-
+</div>
