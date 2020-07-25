@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create(article_params)
+    @article = Article.create(article_params.merge(user_id: current_user.id))
 
     if @article.save
       redirect_to @article

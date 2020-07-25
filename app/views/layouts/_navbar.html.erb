@@ -15,6 +15,7 @@
                      <%= link_to "VIDEOS, PODCAST & ARTICLES", articles_path, class:"li a" %>
                     <% if user_signed_in? %>
                         <%= link_to "SE DÉCONNECTER", destroy_user_session_path, class:"li a"   %>
+                        <%= link_to "MODIFIER MON PROFIL", edit_user_registration_path, class:"li a" %>
                     <% else %>
                         <%= link_to "SE CONNECTER", new_user_session_path, class:"li a" %>
                         <%= link_to "S'INSCRIRE", new_user_registration_path, class:"li a" %>

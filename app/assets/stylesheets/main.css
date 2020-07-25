@@ -25,6 +25,12 @@
   position: absolute;
 }
 
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}
+
 /* CARDS MIND/BODY/SPIRIT */
 
 /************************/
@@ -291,7 +297,7 @@
   margin: auto;
   justify-content: center;
   align-self: center;
-  max-width: 100%;
+  max-width: 1000px;
 }
 
 .containerxxl {
@@ -374,4 +380,136 @@
 
 .no-decoration:hover {
   color: #d8262c;
+}
+
+.littleavatar {
+  margin-left: 30px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.italic {
+  display: inline-flex;
+  justify-content: flex-end;
+  font-style: italic;
+  padding: 20px;
+  line-height: 20px;
+}
+
+.o {
+  align-items: center;
+  margin-left: 10px;
+}
+.n {
+  display: flex;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+user agent stylesheet div {
+  display: block;
+}
+.gu {
+  word-wrap: break-word;
+}
+.gt {
+  word-break: break-word;
+}
+
+.io {
+  height: 48px;
+}
+.in {
+  width: 48px;
+}
+.cd {
+  position: relative;
+}
+
+.iu {
+  transform: translateX(-50%) translateY(-50%);
+}
+.it {
+  left: 50%;
+}
+.is {
+  top: 50%;
+}
+.ir {
+  height: calc(100% + 25px);
+}
+.iq {
+  width: calc(100% + 25px);
+}
+.ip {
+  fill: rgba(3, 168, 124, 1);
+}
+.fr {
+  flex-direction: row;
+}
+.ez {
+  pointer-events: none;
+}
+.s {
+  position: absolute;
+}
+.p {
+  justify-content: center;
+}
+.o {
+  align-items: center;
+  margin-left: 10px;
+}
+.n {
+  display: flex;
+}
+
+.io {
+  height: 48px;
+}
+.in {
+  width: 48px;
+}
+.dm {
+  border-radius: 50%;
+}
+.r {
+  display: block;
+}
+
+.iv {
+  margin-left: 12px;
+}
+.ai {
+  width: 100%;
+}
+.r {
+  display: block;
+}
+
+.username {
+  padding-left: 5px;
+}
+
+.followbtn {
+  margin-left: 5px;
+  padding: 2px 10px;
+  color: rgba(0, 125, 184, 1);
+  background: none;
+  border-radius: 5px;
+  border: solid 0.3px rgba(0, 125, 184, 1);
+}
+
+.avatar {
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.margin {
+  margin-left: 10px;
 }
