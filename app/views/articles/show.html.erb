@@ -6,7 +6,7 @@
 
 <div class="o n">
 <div>
-<a href="#" rel="noopener">
+<a href="<% user_path %>">
 <div class="cd in io">
 <div class="ip n fr o p s iq ir is it iu ez">
 </div>
@@ -26,15 +26,17 @@
 </span>
 <div class="gc r bh h">
 <button class="jd cu as at je bc bd jf bb df bi b bj jg ek bm dg dh di bx dj followbtn">Follow</button></div></div></span></div></div><span class="bi b bj bk bl bm r bn bo"><span class="bi ej cb bk bv iy bu iz ja jb bn"><div><a class="cg ch au av aw ax ay az ba bb jc be ck cl" rel="noopener" href="#"><%= @article.created_at.strftime("%d/%m/%Y") %></a> <!-- -->·<!-- --> <!-- -->6<!-- --> min read<span style="padding-left:4px"><svg class="star-15px_svg__svgIcon-use" width="15" height="15" viewBox="0 0 15 15" style="margin-top:-2px"><path d="M7.44 2.32c.03-.1.09-.1.12 0l1.2 3.53a.29.29 0 0 0 .26.2h3.88c.11 0 .13.04.04.1L9.8 8.33a.27.27 0 0 0-.1.29l1.2 3.53c.03.1-.01.13-.1.07l-3.14-2.18a.3.3 0 0 0-.32 0L4.2 12.22c-.1.06-.14.03-.1-.07l1.2-3.53a.27.27 0 0 0-.1-.3L2.06 6.16c-.1-.06-.07-.12.03-.12h3.89a.29.29 0 0 0 .26-.19l1.2-3.52z"></path></svg></span></div></span></span></div></div>
-
+</div>
 
     <% if @article.image.present? %>
-        <center><%= image_tag(@article.image, class: "article-image padding") %></center>
+        <center> <%= image_tag(@article.image, class: "article-image padding")%>  </center> 
     <% end %>
+
+    <div class="container-medium">
     <div class="article-content">
     <p> <%= @article.content.html_safe %> </p>
     </div>
-
+</div>
     <div class="container-medium">
 <% if current_user && current_user.admin %>
 <center><%= link_to "Modifier", edit_article_path(@article.id), class: "btn" %>

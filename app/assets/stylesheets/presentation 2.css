@@ -52,7 +52,7 @@
 @media screen and (min-width: 1000px) {
   .home-panels [class^="panel"] {
     min-height: 300px;
-    width: 33.3%;
+    width: 26.3%;
   }
 }
 @media screen and (min-width: 1300px) {

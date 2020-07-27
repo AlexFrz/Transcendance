@@ -295,7 +295,7 @@
 
 .article-image {
   margin: auto;
-  justify-content: center;
+  justify-content: cover;
   align-self: center;
   max-width: 1000px;
 }

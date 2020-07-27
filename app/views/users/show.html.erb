@@ -4,14 +4,17 @@
         <div class="article-titlee">
             <h1><%= @user.username %></h1>
         </div>
+</div>
 
         <div class="field">
  <p><center> <%= image_tag(@user.avatar, class: "article-image padding") %> </center></p>
 </div>
 
+<div class="containersmall">
     <div class="article-content">
     <p> <%= @user.description %> </p>
     </div>
+</div>
 
 
 <p> <center> 
