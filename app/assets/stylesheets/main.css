@@ -195,6 +195,9 @@
   margin-top: -50px;
 }
 
+.high {
+  margin-top: -20px;
+}
 .article-title {
   width: 100%;
   padding-top: 30px;
@@ -218,7 +221,25 @@
   font-family: "Merriweather", serif;
   color: rgba(0, 0, 0, 0.7);
   font-weight: lighter;
-  margin-bottom: 50px;
+}
+
+.youtubeid {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 10px;
+  position: relative;
+  border: none;
+  font-family: "Merriweather", serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: lighter;
+}
+
+.youtubeid::placeholder {
+  font-size: 10px;
+  font-family: "Merriweather", serif;
+  color: #b3b3b1;
+  font-weight: lighter;
 }
 
 .medium-editor-placeholder:after {
@@ -298,6 +319,7 @@
   justify-content: cover;
   align-self: center;
   max-width: 1000px;
+  margin-top: 25px;
 }
 
 .containerxxl {
@@ -328,6 +350,7 @@
   font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 30px;
+  margin-top: -40px;
 }
 
 .index-article-image {
@@ -493,23 +516,55 @@ user agent stylesheet div {
 
 .username {
   padding-left: 5px;
+  color: #333;
 }
 
 .followbtn {
   margin-left: 5px;
   padding: 2px 10px;
-  color: rgba(0, 125, 184, 1);
+  color: #d8262c;
   background: none;
   border-radius: 5px;
-  border: solid 0.3px rgba(0, 125, 184, 1);
+  border: solid 0.3px #d8262c;
 }
 
 .avatar {
-  background-size: cover;
-  background-position: center center;
+  position: relative;
   overflow: hidden;
 }
 
+.avatar img {
+  position: absolute;
+  height: auto;
+  left: 50%;
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .margin {
   margin-left: 10px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 30px;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.date {
+  color: #d8262c;
+}
+
+.marginbottom {
+  line-height: 18px;
 }

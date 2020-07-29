@@ -11,6 +11,8 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 require("data-confirm-modal");
+require("social-share-button");
+require("social-share-button/wechat");
 
 import Vue from "vue/dist/vue.esm";
 
