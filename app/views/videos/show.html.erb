@@ -1,0 +1,32 @@
+<head>
+   <link type="text/css" rel="stylesheet" href="../node_modules/video.js/dist/video-js.min.css" />
+</head>
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video.title %>
+</p>
+
+  <video
+    id="vid1"
+    class="video-js vjs-default-skin"
+    controls
+    autoplay
+    width="640" height="264"
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=2W2JGFVV8xs"}] }'
+  >
+  </video>
+
+<p>
+  <strong>Description:</strong>
+  <%= @video.description %>
+</p>
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
+
+  <script src="../node_modules/video.js/dist/video.min.js"></script>
+  <script src="../dist/Youtube.min.js"></script>
