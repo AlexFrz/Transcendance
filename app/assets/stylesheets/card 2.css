@@ -4,10 +4,12 @@
   padding: 50px;
 }
 
-@media screen and (min-width: 550px) .post-type-archive-podcasts-videos .site-main section .content,
+@media screen and (min-width: 550px) {
+  .post-type-archive-podcasts-videos .site-main section .content,
   .tax-type .site-main .page-section .content {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .post-type-archive-podcasts-videos .site-main section article,
@@ -31,26 +33,46 @@ section {
   display: block;
 }
 
-@media screen and (min-width: 700px) .post-type-archive-podcasts-videos .site-main section article .mobile-header,
+@media screen and (min-width: 700px) {
+  .post-type-archive-podcasts-videos .site-main section article .mobile-header,
   .tax-type .site-main .page-section article .mobile-header {
-  display: none;
-  visibility: hidden;
-  height: 0;
+    display: none;
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .post-type-archive-podcasts-videos
+    .site-main
+    section
+    article
+    .podcast-media-container,
+  .tax-type .site-main .page-section article .podcast-media-container {
+    width: 33.33333333%;
+  }
 }
 
-@media screen and (min-width: 900px) .post-type-archive-podcasts-videos .site-main section article .podcast-media-container,
+@media screen and (min-width: 850px) {
+  .post-type-archive-podcasts-videos
+    .site-main
+    section
+    article
+    .podcast-media-container,
   .tax-type .site-main .page-section article .podcast-media-container {
-  width: 33.33333333%;
+    width: 35%;
+    float: left;
+  }
 }
-@media screen and (min-width: 850px) .post-type-archive-podcasts-videos .site-main section article .podcast-media-container,
+@media screen and (min-width: 700px) {
+  .post-type-archive-podcasts-videos
+    .site-main
+    section
+    article
+    .podcast-media-container,
   .tax-type .site-main .page-section article .podcast-media-container {
-  width: 35%;
-  float: left;
-}
-@media screen and (min-width: 700px) .post-type-archive-podcasts-videos .site-main section article .podcast-media-container,
-  .tax-type .site-main .page-section article .podcast-media-container {
-  width: 38.5%;
-  float: left;
+    width: 38.5%;
+    float: left;
+  }
 }
 .post-type-archive-podcasts-videos
   .site-main
@@ -74,12 +96,18 @@ section {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 700px) h2 {
-  font-size: 30px;
+@media screen and (min-width: 700px) {
+  h2 {
+    font-size: 30px;
+  }
 }
-@media screen and (min-width: 550px) h2 {
-  font-size: 26px;
+
+@media screen and (min-width: 550px) {
+  h2 {
+    font-size: 26px;
+  }
 }
+
 h2 {
   font-size: 22px;
 }
@@ -211,9 +239,11 @@ main {
   display: block;
 }
 
-@media screen and (min-width: 921px) .post-type-archive-podcasts-videos .site-main section,
+@media screen and (min-width: 921px) {
+  .post-type-archive-podcasts-videos .site-main section,
   .tax-type .site-main .page-section {
-  padding: 0 0 10px 0;
+    padding: 0 0 10px 0;
+  }
 }
 .post-type-archive-podcasts-videos .site-main section,
 .tax-type .site-main .page-section {
