@@ -6,8 +6,6 @@ class User < ApplicationRecord
 
   attr_writer :login
 
-  validate :validate_username
-
   has_one_attached :avatar
 
   def login 
