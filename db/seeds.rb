@@ -21,3 +21,27 @@ User.create(
     password: "fdpntm",
     admin: true
 )
+
+
+User.create(
+    username: "Kevin Lamidi",
+    description: "",
+    email: "lamidikevin@icloud.com",
+    password: "Sylvie050393",
+    admin: true
+)
+
+User.create(
+    username: "Eugène Blivi",
+    description: "",
+    email: "lamidikevin@icloud.com",
+    password: "Sylvie050393",
+    admin: true
+)
+User.create(
+    username: "Ayoub Namrany",
+    description: "",
+    email: "retirewithayoub@gmail.com",
+    password: "Sylvie050393",
+    admin: true
+)

@@ -13,7 +13,9 @@
 <div class="ip n fr o p s iq ir is it iu ez">
 </div>
 <div class="margin high">
+    <% if @article.user.avatar.present? %>
 <%= image_tag(@article.user.avatar, class:"r dm io in avatar") %> 
+    <% end %>
 </div>
 
 </div>
