@@ -8,13 +8,13 @@
 
 <div class="o n">
 <div>
-<a href="<% user_path %>">
+<a href="<% user_path(@article.user.id) %>">
 <div class="cd in io">
 <div class="ip n fr o p s iq ir is it iu ez">
 </div>
 <div class="margin high">
     <% if @article.user.avatar.present? %>
-<%= image_tag(@article.user.avatar, class:"r dm io in avatar") %> 
+        <%= image_tag(@article.user.avatar, class:"r dm io in avatar") %> 
     <% end %>
 </div>
 
