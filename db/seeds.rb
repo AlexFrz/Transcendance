@@ -25,7 +25,7 @@ User.create(
 
 User.create(
     username: "Kevin Lamidi",
-    description: "",
+    description: "Let's grind, baby",
     email: "lamidikevin@icloud.com",
     password: "Sylvie050393",
     admin: true
@@ -33,15 +33,16 @@ User.create(
 
 User.create(
     username: "Eugène Blivi",
-    description: "",
-    email: "lamidikevin@icloud.com",
-    password: "Sylvie050393",
+    description: "Let's grind, baby",
+    email: "eugene.blivi@gmail.com",
+    password: "transcenance 0702",
     admin: true
 )
+
 User.create(
-    username: "Ayoub Namrany",
-    description: "",
+    username: "Ayoub Namrani",
+    description: "Let's grind, baby",
     email: "retirewithayoub@gmail.com",
-    password: "Sylvie050393",
+    password: "Ayoub1994@",
     admin: true
 )
