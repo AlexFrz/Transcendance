@@ -31,3 +31,5 @@ document.addEventListener("turbolinks:load", () => {
 import "./jaliswall";
 
 import "controllers";
+
+import "../stylesheets/application";
