@@ -33,7 +33,9 @@ User.create(
 
 User.create(
     username: "Eugène Blivi",
-    description: "Let's grind, baby",
+    description: "Sur cette terre, 97% des personnes sont des rêveurs passifs et seulement 3% sont déterminés à atteindre leurs objectifs!
+    Il est temps que cela cesse!
+    Mon but: Inverser cette tendance par le biais de mes vidéos de coaching mental et faire de vous une machine inarrêtable !",
     email: "eugene.blivi@gmail.com",
     password: "transcenance 0702",
     admin: true
