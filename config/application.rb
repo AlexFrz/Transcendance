@@ -13,10 +13,6 @@ module Transcendance
     config.assets.initialize_on_precompile = false
 
     # config/application.rb
-Bundler.require(*Rails.groups)
-
-Dotenv::Railtie.load
-
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
