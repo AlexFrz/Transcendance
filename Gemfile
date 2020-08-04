@@ -51,7 +51,7 @@ group :test do
 end
 
 group :production, :staging do
-      gem 'rails_12factor'
+     gem 'rails_12factor', group: :production
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
