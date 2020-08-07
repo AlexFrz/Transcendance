@@ -66,5 +66,5 @@ gem 'youtube_rails'
 gem 'social-share-button'
 gem 'autoprefixer-rails'
 gem 'babel-transpiler'
-gem 'dotenv-rails', groups: [:development, :test]
-gem 'aws-sdk', '~> 2'
+gem 'dotenv-rails'
+gem "aws-sdk-s3", require: false
